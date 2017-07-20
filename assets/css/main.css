@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background:url(../img/bg-repeat.jpg) repeat;
+}
+
+#main {
+	background:url(../img/bg.jpg) top center no-repeat;
+}
+
+#base {
+	margin:auto;
+	width:970px;
+}
+
+#logo h1 {
+	padding:0;
+	margin:0;
+}
+
+#logo h1 a {
+	display:block;
+	width:100%;
+	height:173px;
+	text-indent:-9999px;
+}
+
+#head {
+	width:100%;
+	background:url(../img/head.png) repeat-x;
+	height:30px;
+}
+

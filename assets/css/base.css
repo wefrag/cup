@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
