@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+
+    php:
+        image: mxr/nofrag-cup
+        build: .
+        volumes:
+            - .:/var/www/html
+        environment:
+            - BASE_URL=http://php.cup2012.docker
+
+    mysql:
+        image: mysql:5.7
+        volumes:
+            - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+        environment:
+            - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+            - MYSQL_DATABASE=wefrag_cup
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        environment:
+            - PMA_HOST=mysql

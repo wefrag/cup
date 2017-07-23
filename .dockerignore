@@ -1,0 +1,5 @@
+.git
+.gitignore
+.openid
+Dockerfile
+docker-compose.yml
